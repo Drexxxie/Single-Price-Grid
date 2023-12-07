@@ -1,0 +1,157 @@
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 87%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--grayish-blue);
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.board {
+    max-width: 375px;
+}
+
+div {
+    padding: 2rem;
+}
+
+.intro {
+    background-color: white;
+    border-top-left-radius: 0.7rem;
+    border-top-right-radius: 0.7rem;
+}
+
+.title {
+    color: var(--cyan);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.sub-title {
+    color: var(--bright-yellow);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.description {
+    color: gray;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.price {
+    width: 100%;
+    background-color: darkcyan;
+    color: white;
+}
+
+.subscribe {
+    margin-bottom: 1.5rem;
+}
+
+.span {
+    margin-bottom: 1rem;
+}
+
+.number {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.period {
+    font-size: 14px;
+    color: cornsilk;
+}
+
+.text {
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.about {
+    width: 100%;
+    background-color: var(--cyan);
+    color: white;
+    border-bottom-left-radius: 0.7rem;
+    border-bottom-right-radius: 0.7rem;
+}
+
+.reason {
+    margin-bottom: 1.5rem;
+}
+
+li {
+    list-style-type: none;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+button {
+    color: white;
+    background-color: var(--bright-yellow);
+    padding: 1rem;
+    border: none;
+    border-radius: 0.3rem;
+    width: 100%;
+    font-weight: 700;
+}
+
+footer {
+    color: gray;
+    padding: 2rem;
+    font-size: 14px;
+}
+
+a {
+    color: gray;
+    text-decoration: none;
+}
+
+@media screen and (width >= 600px) {
+    .board {
+        max-width: 100%;
+    }
+
+    .lower-deck {
+        max-width: 100%;
+    }
+
+    .intro {
+        border-top-left-radius: 0.7rem;
+        border-top-right-radius: 0.7rem;
+    }
+
+    .lower-deck {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .price {
+        border-bottom-left-radius: 0.7rem;
+    }
+
+    .about {
+        border-bottom-right-radius: 0.7rem;
+        border-bottom-left-radius: 0rem;
+    }
+}
